@@ -12,24 +12,22 @@
               <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
                 https://dhy2005.github.io/vast-test/ads.mp4
               </MediaFile>
+			              <!-- SIMID creative reference -->
+				<InteractiveCreativeFile type="text/html" apiFramework="SIMID"  variableDuration="true">
+				https://dhy2005.github.io/vast-test/simid_creative.html
+				</InteractiveCreativeFile>
             </MediaFiles>
-
-            <!-- SIMID creative reference -->
-            <InteractiveCreativeFile type="application/javascript" apiFramework="SIMID">
-              https://dhy2005.github.io/vast-test/simid_creative.js
-            </InteractiveCreativeFile>
-
-            <!-- Initialization data passed to SIMID -->
-            <AdParameters xmlEncoded="true">
-              <![CDATA[
-                {
-                  "ctaText": "Buy Now",
-                  "qrCodeUrl": "https://dhy2005.github.io/vast-test/myvideo_exit_qrcode.png",
-                  "clickThruUrl": "https://www.litv.tv/",
-                  "loopOnEnd": true
-                }
-              ]]>
-            </AdParameters>
+			<!-- Initialization data passed to SIMID -->
+			<AdParameters xmlEncoded="true">
+			<![CDATA[
+				{
+				"ctaText": "Buy Now",
+				"qrCodeUrl": "https://dhy2005.github.io/vast-test/myvideo_exit_qrcode.png",
+				"clickThruUrl": "https://www.litv.tv/",
+				"loopOnEnd": true
+				}
+			]]>
+			</AdParameters>
           </Linear>
         </Creative>
       </Creatives>

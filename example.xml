@@ -6,7 +6,7 @@
       <Creatives>
         <Creative id="1" sequence="1">
           <Linear>
-            <Duration>00:00:30</Duration>
+            <Duration>00:00:77</Duration>
             <MediaFiles>
               <!-- Background video asset -->
               <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">

@@ -1,0 +1,38 @@
+<VAST version="4.2">
+  <Ad id="simid-example">
+    <InLine>
+      <AdSystem>ExampleAdServer</AdSystem>
+      <AdTitle>SIMID QR Overlay Creative</AdTitle>
+      <Creatives>
+        <Creative id="1" sequence="1">
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <MediaFiles>
+              <!-- Background video asset -->
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
+                https://dhy2005.github.io/vast-test/ads.mp4
+              </MediaFile>
+            </MediaFiles>
+
+            <!-- SIMID creative reference -->
+            <InteractiveCreativeFile type="application/javascript" apiFramework="SIMID">
+              https://dhy2005.github.io/vast-test/simid_creative.js
+            </InteractiveCreativeFile>2
+
+            <!-- Initialization data passed to SIMID -->
+            <AdParameters xmlEncoded="true">
+              <![CDATA[
+                {
+                  "ctaText": "Buy Now",
+                  "qrCodeUrl": "https://dhy2005.github.io/vast-test/myvideo_exit_qrcode.png",
+                  "clickThruUrl": "https://www.litv.tv/",
+                  "loopOnEnd": true
+                }
+              ]]>
+            </AdParameters>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

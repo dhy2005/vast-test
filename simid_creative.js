@@ -1,0 +1,18 @@
+// Called when SIMID creative initializes
+function onInit(initParams) {
+  const data = JSON.parse(initParams.creativeData.adParameters);
+  alert( data.stringify() );
+  // Example: create CTA button
+  const button = document.createElement('button');
+  button.textContent = data.ctaText;
+  button.onclick = () => {
+    // On CTV, clickThruUrl often rendered as QR overlay
+    window.open(data.clickThruUrl, "_blank");
+  };
+  document.body.appendChild(button);
+
+  // Example: show QR code overlay
+  const qr = document.createElement('img');
+  qr.src = data.qrCodeUrl;
+  document.body.appendChild(qr);
+}

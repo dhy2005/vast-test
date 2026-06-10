@@ -17,7 +17,7 @@
             <!-- SIMID creative reference -->
             <InteractiveCreativeFile type="application/javascript" apiFramework="SIMID">
               https://dhy2005.github.io/vast-test/simid_creative.js
-            </InteractiveCreativeFile>2
+            </InteractiveCreativeFile>
 
             <!-- Initialization data passed to SIMID -->
             <AdParameters xmlEncoded="true">
